@@ -3,4 +3,12 @@ Prerequisite(s) :Nothing in particular. In case it doesn't run, try upgrading to
 https://docs.microsoft.com/en-us/powershell/wmf/5.1/install-configure
 Customary Warning : Run at your own risk(s)
 
+About Script,
+•	Find and replace INSERT_COMMAND_TO_BE_RUN_REMOTELY_HERE with the Target Command to be run.
+•	Be wary of Execution Policy, WinRM Access Restrictions &/or TrustedHosts.
+•	Script is designed to append Server Name held inside $RemoteComputer everytime it changes at the beginning of its output
+  'Next Output From Server <Hostname>’.
+•	Data APPENDS into the Output File.
+•	Script displays Output File after runtime (F5) - Cuz why the hell not..
+
 3499
