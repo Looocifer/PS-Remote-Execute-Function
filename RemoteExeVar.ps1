@@ -1,5 +1,8 @@
+# Variable String for Input File
 $InputFile = "C:\temp\Servers.txt"
-$OutputFile= "C:\temp\Output.txt"
+# Variable String for Output File
+$OutputFile = "C:\temp\Output.txt"
+# Insert command to run remotely in the next line between ''
 $Command = 'ENTER_COMMAND_HERE'
 $RemoteComputers = Get-Content $InputFile
 ForEach ($RemoteComputer in $RemoteComputers) {
