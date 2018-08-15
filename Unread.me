@@ -11,4 +11,7 @@ About Script,
 •	Data APPENDS into the Output File.
 •	Script displays Output File after runtime (F5) - Cuz why the hell not..
 
+RemoteExeVar.ps1 uses $Command as the variable for the String to be run and runs via 'Invoke-Expression -Command $Command'.
+This might not work for elaborate commands. Works for simple commands. Eg - $Command = 'Get-ChildItem cert:\LocalMachine -Recurse'
+
 3499
